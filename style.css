@@ -31,6 +31,7 @@ img {
 
 ::-webkit-scrollbar {
     width: 13px;
+    height: 13px;
     background-color: transparent;
 }
 
@@ -40,7 +41,7 @@ img {
 
 ::-webkit-scrollbar-thumb {
     background-color: transparent; 
-    border-radius: 6px;                          
+    border-radius: 60px;                          
     border: 3px solid transparent;            
     background-clip: content-box;  
     transition: background-color 0.2s;
@@ -997,38 +998,6 @@ main {
     overflow: hidden;
     text-overflow: ellipsis;
 }
-
-
-/* - - - Barra de rolamento horizontal das fileiras (sempre visível) - - - */
-
-.second_mc::-webkit-scrollbar,
-.third_mc::-webkit-scrollbar,
-.forth_mc::-webkit-scrollbar,
-.fifth_mc::-webkit-scrollbar,
-.sixth_mc::-webkit-scrollbar {
-    height: 13px;
-}
-
-.second_mc::-webkit-scrollbar-thumb,
-.third_mc::-webkit-scrollbar-thumb,
-.forth_mc::-webkit-scrollbar-thumb,
-.fifth_mc::-webkit-scrollbar-thumb,
-.sixth_mc::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3);
-}
-
-/* Firefox usa outra propriedade para a barra */
-@supports (-moz-appearance: none) {
-    .second_mc,
-    .third_mc,
-    .forth_mc,
-    .fifth_mc,
-    .sixth_mc {
-        scrollbar-width: thin;
-        scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
-    }
-}
-
 
 /* - - - Telas muito grandes (monitores grandes / TV) - - - */
 
